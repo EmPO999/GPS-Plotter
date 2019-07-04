@@ -15,7 +15,9 @@ The values are sent using a node 'send_gps' in a string format and received on a
 
 5. Run file Plot_GPS.py on another terminal window
 
-Note - You can also add waypoints('\n' Separated) if you want your robot to reach to a particular GPS coordinate by typing GPS co-ordinate and clicking 'Plot WayPoints' on the GUI.
+Note1 - You can also add waypoints('\n' Separated) if you want your robot to reach to a particular GPS coordinate by typing GPS co-ordinate and clicking 'Plot WayPoints' on the GUI.
+
+Note2 - File dummy_sender.py is just a test file to show the functioning of the GPS plotting. For further queries, feel free to drop a mail at shubh.agarwal2017@vitstudent.ac.in 
 
 # Support Me
   If you like this, leave a star

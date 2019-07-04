@@ -110,10 +110,8 @@ class Window(QDialog):
 
 			for i in range(len(self.Data)):
 				x,y = self.Data[i].split(',')
-				x1, x2 = x.split(' ')
-				y1, y2 = y.split(' ')
-				x = float(x1) + float(x2)/60
-				y = float(y1) - float(y2)/60
+				x = float(x)
+				y = float(y)
 				lat.append(  float(x)  )
 				lon.append(  float(y)  )
 			
@@ -123,8 +121,8 @@ class Window(QDialog):
 				point = (lat[i], lon[i])
 				self.ax.annotate('Waypoint ' + str(i),point)
 			self.canvas.draw()
-		except:
-			pass	
+		except Exception as e:
+			print e	
 if __name__ == '__main__':
 	app = QApplication(sys.argv)
 	main = Window()
